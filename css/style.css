@@ -126,7 +126,7 @@ body{
 	height: 80px;
 	background-color: white;
 	position: fixed;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 2px solid #ccc;
 	width: 100%;
 	z-index: 10;
 	top: 0;
@@ -137,16 +137,26 @@ body{
 	top: 20px;
 	left: 20px;
 }
-@media all and (max-width: 992px){
+@media all and (max-width: 991px){
 	.header-box .header img{
-		transform: scale(1.2);
 		left: 40px;
 	}
 }
-@media all and (max-width: 375px){
+@media all and (max-width: 480px){
 	.header-box .header img{
-		transform: scale(1);
 		left: 20px;
+		transform: scale(0.8);
+	}
+}
+@media all and (max-width: 425px){
+	.header-box .header img{
+		left: 0;
+	}
+}
+@media all and (max-width: 374px){
+	.header-box .header img{
+		left: -20px;
+		transform: scale(0.6);
 	}
 }
 .header-box .header .menu{
@@ -213,7 +223,7 @@ body{
 	height: 4px;
 	position: absolute;
 	background-color: black;
-	border-radius: 5px 5px 0 0;
+	border-radius: 5px;
 }
 .header .headerBtn .line1{
 	top: 0;
@@ -267,17 +277,17 @@ body{
 .header .headerBtn .line7{
 	top: 0;
 	left: 0;
-	border-radius: 5px 5px 0 0;
+	border-radius: 5px;
 }
 .header .headerBtn .line8{
 	top: 10px;
 	left: 0;
-	border-radius: 5px 5px 0 0;
+	border-radius: 5px;
 }
 .header .headerBtn .line9{
 	top: 20px;
 	left: 0;
-	border-radius: 5px 5px 0 0;
+	border-radius: 5px;
 }
 
 #box1{
@@ -301,7 +311,6 @@ body{
 	100%{
 		top: 10px;
 		transform: rotate(-45deg);
-		border-radius: 5px;
 	}
 }
 @keyframes ROTATE2{
@@ -325,7 +334,6 @@ body{
 	100%{
 		top: 10px;
 		transform: rotate(45deg);
-		border-radius: 5px;
 	}
 }
 @keyframes ROTATE4{
@@ -367,6 +375,29 @@ body{
 	}
 }
 /*end header button animation*/
+.header button{
+	height: 40px;
+	position: absolute;
+	right: 80px;
+	top: 20px;
+	line-height: 40px;
+	font-size: 14px;
+	text-transform: uppercase;
+	padding: 0 10px;
+	background-color: #627383;
+	color: white;
+	font-weight: bold;
+	border: none;
+	outline: none;
+	opacity: 0;
+	pointer-events: none;
+}
+.header button:hover{
+	background-color: #4c5966;
+}
+.header button:focus{
+	outline: none;
+}
 /*END RES-HEADER BUTTON*/
 @media all and (max-width: 991px){
 	.header-box .header .menu{
@@ -376,47 +407,52 @@ body{
 		opacity: 1;
 		pointer-events: all;
 	}
+	.header button{
+		opacity: 1;
+		pointer-events: all;
+	}
 }
 
 /*RES-HEADER*/
 .resHeader{
-	height: calc(100% - 119px);
+	height: 445px;
 	width: 100%;
 	position: fixed;
-	top: 119px;
+	top: 80px;
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: rgb(0,0,0,0.4);
 	z-index: 10;
 	display: none;
 }
 .resHeader .hidden-drop-menu{
-	width: 30%;
+	width: 100%;
 	height: 100%;
 	position: absolute;
 	display: block;
 	top: 0;
 	left: 0;
 	z-index: 15;
-	background-color: #1a1d1d;
+	background-color: transparent;
 	text-transform: capitalize;
 	font-size: 14px;
 	overflow-y: auto;
 }
 .resHeader .hidden-drop-menu .itemBox{
-	background-color: #1a1d1d;
-	border-bottom: 1px solid black;
+	background-color: white;
+	border-bottom: 2px solid #ccc;
 }
 .resHeader .hidden-drop-menu .pre-hid{
 	width: 100%;
-	line-height: 50px;
+	line-height: 40px;
 	font-weight: bold;
 	cursor: pointer;
-	color: white;
+	color: black;
+	text-transform: uppercase;
 }
 .resHeader .hidden-drop-menu .pre-hid a{
-	color: white;
+	color: black;
+	text-transform: uppercase;
 }
 .resHeader .hidden-drop-menu .pre-hid span{
 	float: right;
@@ -427,7 +463,7 @@ body{
 }
 .resHeader .hidden-drop-menu .hid-item a{
 	text-decoration: none;
-	color: white;
+	color: black;
 	font-weight: bold;
 }
 .resHeader .hidden-drop-menu .hid-item:hover{
@@ -435,26 +471,67 @@ body{
 }
 .resHeader .child-menu{
 	width: 100%;
+	display: inline-block;
 	display: none;
 }
-.resHeader .hidden-drop-menu .hid-child{
+.resHeader .child-menu .title{
+	line-height: 40px;
+	height: 40px;
 	width: 100%;
-	line-height: 50px;
-	color: white;
+	border-bottom: 1px solid #ccc;
 }
-.resHeader .hidden-drop-menu .pre-hid-child{
-	width: 100%;
-	line-height: 50px;
+.resHeader .child-menu .title a{
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	padding-left: 15px;
 	font-weight: bold;
-	cursor: pointer;
-}
-.resHeader .hidden-drop-menu .pre-hid-child span{
-	float: right;
-}
-.resHeader .hidden-drop-menu .grandchild-menu{
 	width: 100%;
-	display: none;
+	color: black;	
 }
+.resHeader .child-menu .criteria{
+	line-height: 40px;
+	height: 40px;
+	margin-top: -15px;
+	width: 100%;
+}
+.resHeader .child-menu .criteria a{
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	padding-left: 15px;
+	width: 100%;
+	color: black;
+}
+
+.resHeader .child-menu .select{
+	line-height: 40px;
+	min-height: 40px;
+	max-height: 80px;
+	width: 100%;
+	text-decoration: none;
+	font-size: 14px;
+	padding-left: 15px;
+	font-weight: bold;
+	width: 100%;
+	color: black;
+}
+.resHeader .child-menu .option{
+	line-height: 40px;
+	height: 40px;
+	margin-top: -15px;
+	width: 100%;
+	text-decoration: none;
+	font-size: 14px;
+	padding-left: 30px;
+	width: 100%;
+	color: black;
+}
+.resHeader .child-menu .option i{
+	/*font-weight: lighter;*/
+}
+
+
 /*END RES-HEADER*/
 
 /*BANNER*/
@@ -465,9 +542,20 @@ body{
 	background-size: cover; 
 	position: relative;
 }
+.banner .banner2{
+	display: none;
+}
+@media all and (max-width: 767px){
+	.banner .banner1{
+		display: none;
+	}
+	.banner .banner2{
+		display: block;
+	}
+}
 .banner .words{
 	margin-top: 50px;
-	width: 40%;
+	width: 50%;
 	float: right;
 	font-size: 40px;
 	color: white;
@@ -478,29 +566,56 @@ body{
 	line-height: 50px;
 	background-color: rgb(0,0,0,0.2);
 }
+@media all and (max-width: 575px){
+	.banner .words{
+		width: 70%;
+	}
+}
+@media all and (max-width: 480px){
+	.banner .words{
+		font-size: 36px;
+		line-height: 44px;
+	}
+}
+@media all and (max-width: 374px){
+	.banner .words{
+		font-size: 30px;
+		line-height: 38px;
+	}
+}
 .banner .words p{
 	margin-top: 10px;
 }
 .banner .image{
 	margin-top: 20px;
-	width: 40%;
+	width: 50%;
 	float: right;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	background-color: transparent;
 }
+@media all and (max-width: 575px){
+	.banner .image{
+		width: 70%;
+	}
+}
 .banner .image img{
-	width: 60%;
+	width: 70%;
 	float: left;
 }
 .banner form{
 	margin-top: 20px;
-	width: 40%;
+	width: 50%;
 	float: right;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+@media all and (max-width: 575px){
+	.banner form{
+		width: 70%;
+	}
 }
 .banner form button{
 	height: 40px;
@@ -520,6 +635,7 @@ body{
 	position: absolute;
 	bottom: 0;
 	left: 0;
+	width: 100%;
 	height: 50px;
 	background-color: #627383;
 }
@@ -528,6 +644,14 @@ body{
 	font-size: 16px;
 	color: white;
 	text-align: center;
+}
+@media all and (max-width: 574px){
+	.banner .rating{
+		height: 80px;
+	}
+	.banner .rating p{
+		line-height: 40px;
+	}
 }
 .banner .rating p span{
 	margin-right: 15px;
@@ -543,6 +667,23 @@ body{
 	padding-bottom: 50px;
 	border-top: 1px solid transparent;
 }
+.holiday2{
+	display: none;
+}
+@media all and (max-width: 767px){
+	.holiday1{
+		display: none;
+	}
+	.holiday2{
+		display: block;
+	}
+	.container-fluid{
+		overflow:hidden;
+	}
+	.slick-list{
+		overflow:visible;
+	}
+}
 .holiday .title{
 	margin-top: 50px;
 	width: 100%;
@@ -557,6 +698,11 @@ body{
 	text-align: center;
 	font-size: 20px;
 	line-height: 26px;
+}
+@media all and (max-width: 767px){
+	.holiday .description{
+		padding: 0 5%;
+	}
 }
 .holiday .list .item{
 	height: 250px;
@@ -578,6 +724,11 @@ body{
 	text-transform: uppercase;
 	line-height: 40px;
 	text-align: center;
+}
+@media all and (max-width: 991px){
+	.holiday .list .item p{
+		width: 100%;
+	}
 }
 .holiday .more{
 	width: 100%;
@@ -615,7 +766,7 @@ body{
 	border-top: 1px solid transparent;
 	padding-bottom: 50px;
 }
-.travel-expert .image, .words{
+.travel-expert .image{
 	margin-top: 50px;
 	border: 20px solid transparent;
 }
@@ -626,13 +777,25 @@ body{
 	background-size: cover;
 }
 .travel-expert .words{
-	height: 300px;
+	/*height: 300px;*/
+	margin-top: 50px;
+	border: 20px solid transparent;
+}
+@media all and (max-width: 991px){
+	.travel-expert .words{
+		margin-top: 20px;
+	}
 }
 .travel-expert .words .title{
 	width: 100%;
 	font-size: 30px;
 	font-weight: bold;
 	text-transform: uppercase;
+}
+@media all and (max-width: 991px){
+	.travel-expert .words .title{
+		text-align: center;
+	}
 }
 .travel-expert .words .description{
 	width: 100%;
@@ -641,6 +804,30 @@ body{
 	height: 176px;
 	padding-right: 10px;
 	overflow-y: scroll;
+}
+.travel-expert .more{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+}
+@media all and (max-width: 991px){
+	.travel-expert .more{
+		margin-top: -20px;
+	}
+}
+.travel-expert .more button{
+	outline: none;
+	border: none;
+	background-color: #d96c5e;
+	color: white;
+	font-size: 16px;
+	text-transform: uppercase;
+	padding: 10px 15px;
+	font-weight: bold;
+}
+.travel-expert .more button:hover{
+	background-color: #cf4635;
 }
 
 /*TRAVEL EXPERT*/
@@ -661,6 +848,11 @@ body{
 	text-align: center;
 	margin-top: 50px;
 }
+@media all and (max-width: 991px){
+	.review .title{
+		padding: 0 0;
+	}
+}
 .review .description{
 	width: 100%;
 	padding: 0 25%;
@@ -668,12 +860,22 @@ body{
 	font-size: 22px;
 	line-height: 30px;
 }
+@media all and (max-width: 991px){
+	.review .description{
+		padding: 0 0;
+	}
+}
 .review .description span{
 	color: #8e8174;
 }
 .review .comment{
 	width: 100%;
 	padding: 0 25%;
+}
+@media all and (max-width: 991px){
+	.review .comment{
+		padding: 0 0;
+	}
 }
 .review .comment .detail{
 	width: 100%;
@@ -706,6 +908,11 @@ body{
 	width: 100%;
 	padding: 0 25%;
 	margin-top: 15px;
+}
+@media all and (max-width: 991px){
+	.review .guest{
+		padding: 0 0;
+	}
 }
 .review .guest .minor{
 	float: left;
@@ -743,6 +950,16 @@ body{
 	padding: 0 25%;
 	text-align: center;
 }
+@media all and (max-width: 767px){
+	.reputation .famous-press{
+		padding: 0 5%;
+	}
+}
+@media all and (max-width: 424px){
+	.reputation .famous-press{
+		padding: 0 0;
+	}
+}
 .reputation .famous-press p{
 	font-size: 16px;
 	line-height: 30px;
@@ -751,10 +968,31 @@ body{
 	height: 40px;
 	margin-top: -10px;
 }
+@media all and (max-width: 424px){
+	.reputation .famous-press img{
+		height: 35px;
+	}
+}
+@media all and (max-width: 374px){
+	.reputation .famous-press img{
+		height: 30px;
+	}
+}
 .reputation .criteria{
 	background-color: #f5f5f5;
 	border: 2px solid #808080;
 	margin-top: 50px;
+}
+.reputation .crit2{
+	display: none;
+}
+@media all and (max-width: 991px){
+	.reputation .crit1{
+		display: none;
+	}
+	.reputation .crit2{
+		display: block;
+	}
 }
 .reputation .criteria .item{
 	padding-bottom: 30px;
@@ -792,8 +1030,8 @@ body{
 	margin-top: 50px;
 	padding-bottom: 30px;
 }
-.footer .certificates .words, .images{
-
+.footer .certificates .words{
+	
 }
 .footer .certificates .words .title{
 	width: 100%;
@@ -802,20 +1040,39 @@ body{
 	text-transform: uppercase;
 	font-weight: bold;
 	text-align: center;
+	
 }
 .footer .certificates .words .description{
 	width: 100%;
 	font-size: 18px;
 	line-height: 26px;
 	text-align: center;
+	
 }
 .footer .certificates .images{
 	
 }
 .footer .certificates .images img{
 	height: 70px;
-	margin-right: 25px;
+	padding: 0 25px;
 	margin-top: 5px;
+}
+@media all and (max-width: 991px){
+	.footer .certificates .images{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.footer .certificates .images img{
+		height: 70px;
+		padding: 0 15px;
+		margin-top: 0;
+	}
+}
+@media all and (max-width: 575px){
+	.footer .certificates .images{
+		margin-top: 20px;
+	}
 }
 .footer .infomation .follow, .sign-up, .booking{
 	padding-bottom: 30px;
@@ -854,7 +1111,7 @@ body{
 }
 .footer .infomation .sign-up form #email{
 	float: left;
-	width: 80%;
+	width: 70%;
 	padding-left: 10px;
 	padding-right: 10px;
 	color: rgb(255,255,255,0.6);
@@ -872,13 +1129,21 @@ body{
 }
 .footer .infomation .sign-up form #subscribe{
 	float: right;
-	width: 18%;
+	width: 28%;
 	height: 30px;
 	color: rgb(255,255,255,1);
 	background-color: #627383;
 	border: none;
 	font-size: 16px;
 	text-transform: uppercase;
+}
+@media all and (max-width: 574px){
+	.footer .infomation .sign-up form #email{
+		width: 60%;
+	}
+	.footer .infomation .sign-up form #subscribe{
+		width: 38%;
+	}
 }
 .footer .infomation .sign-up form #subscribe:hover{
 	background-color: #4c5966;
@@ -933,7 +1198,7 @@ body{
 	display: inline-block;
 	list-style-type: none;
 	height: 30px;
-	margin-top: 50px;
+	margin-top: 40px;
 }
 .footer .copyright .menu li a{
 	line-height: 20px;
@@ -941,6 +1206,9 @@ body{
 	padding: 0 5px;
 	text-decoration: none;
 	color: white;
+}
+.footer .copyright .menu li a:hover{
+	text-decoration: underline;
 }
 .footer .copyright .menu li span{
 	color: white;
@@ -954,9 +1222,36 @@ body{
 }
 .footer .copyright .logo{
 	float: right;
+	margin-top: 10px;
+	margin-right: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.footer .copyright .logo img{
 	transform: scale(0.6);
-	margin-top: 20px;
-	margin-right: -80px;
+}
+@media all and (max-width: 1199px){
+	.footer .copyright .menu{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.footer .copyright .menu li{
+		height: 70px;
+	}
+	.footer .copyright .menu li a{
+		padding: 0 15px;
+	}
+	.footer .copyright .logo{
+		width: 100%;
+	}
+}
+@media all and (max-width: 991px){
+	.footer .copyright .menu li a{
+		padding: 0 5px;
+	}
 }
 
 
@@ -966,159 +1261,10 @@ body{
 
 
 
-/*RESPONSIVE*/
 
-@media all and (max-width: 1200px){
-	
-}
-
-@media all and (max-width: 1199px){
-	.banner .booking{
-		height: 240px;
-	}
-	.welcome .words{
-		margin-top: 100px;
-	}
-	.banner .booking .item-lg{
-		border: none;
-	}
-}
-
-@media all and (max-width: 991px){
-	
-	.banner .booking{
-		height: 360px;
-	}
-	.welcome .words{
-		margin-top: 220px;
-	}
-	.banner .booking .item-md{
-		border: none;
-	}
-	.blogs .info .itemBox{
-		margin-top: 30px;
-	}
-	.blogs .info .itemBox .item .img{
-		height: 150px;
-	}
-}
-
-@media all and (max-width: 768px){
-	.booking{
-		font-size: 12px !important;
-	}
-	.stats .info .itemBox{
-		margin-top: 30px;
-	}
-	.resHeader .hidden-drop-menu{
-		width: 45%;
-	}
-}
-@media all and (max-width: 767px){
-	.footer .info .category{
-		margin-top: 50px;
-	}
-	.footer .info .direction{
-		margin-top: 50px;
-	}
-	.banner .booking{
-		height: 720px;
-	}
-	.welcome .words{
-		margin-top: 580px;
-	}
-	.banner .booking .item-sm{
-		border: none;
-	}
-	.stats .info .itemBox{
-		height: 280px;
-	}
-	.page-title .title{
-		line-height: 60px;
-		position: static;
-		width: 100%;
-		text-align: center;
-	}
-	.page-title .page-tree{
-		margin-top: -15px;
-		line-height: 30px;
-		position: static;
-		width: 100%;
-		text-align: center;
-	}
-}
-
-@media all and (max-width: 576px){
-	.stats .info .itemBox{
-		margin-top: 15px;
-	}
-	.blogs .info .itemBox{
-		margin-top: 15px;
-	}
-	.resHeader .hidden-drop-menu{
-		width: 60%;
-	}
-}
-
-@media all and (max-width: 575px){
-	.banner .banner-item .title{
-		font-size: 50px;
-		line-height: 60px;
-		margin-top: 40%;
-	}
-	.banner .banner-item .description{
-		width: 80%;
-		margin-left: 10%;
-	}
-}
-
-@media all and (max-width: 480px){
-	.resHeader .hidden-drop-menu{
-		width: 100%;
-	}
-}
-
-@media all and (max-width: 455px){
-	.introduce2{
-		height: 580px;
-	}
-	.introduce2 .title{
-		line-height: 70px;
-	}
-}
-
-@media all and (max-width: 320px){
-	.review .guest .review-slide .item .guest-info .guest-img{
-		width: 70px;
-		height: 70px;
-		right: 10px;
-	}
-}
-
-@media all and (max-width: 280px){
-	.review .guest .review-slide .item .guest-info .guest-img{
-		width: 60px;
-		height: 60px;
-		right: 5px;
-	}
-	.review .guest .review-slide .item .guest-info .name{
-		line-height: 20px;
-		font-size: 14px;
-		margin-left: -15px;
-	}
-	.review .guest .review-slide .item .guest-info .job{
-		line-height: 20px;
-		font-size: 12px;	
-		margin-left: -15px;
-	}
-}
-
-
-
-/*NEED ADJUST FOR OTHERS PAGE'S RESPON*/
-
-/*force print background-image*/
-@media print
-{
-    * {-webkit-print-color-adjust:exact;}
+/*FORCE PRINT BACKGROUND IMAGE*/
+@media print{
+    *{
+    	-webkit-print-color-adjust:exact;
+    }
 }
