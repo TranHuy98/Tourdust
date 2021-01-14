@@ -890,7 +890,7 @@ body{
 	background-color: #eddbdb;
 	font-size: 14px;
 	line-height: 20px;
-	height: 150px;
+	height: 154px;
 	overflow-y: scroll;
 }
 .review .comment .detail:before{
@@ -1197,8 +1197,10 @@ body{
 .footer .copyright .menu li{
 	display: inline-block;
 	list-style-type: none;
-	height: 30px;
 	margin-top: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .footer .copyright .menu li a{
 	line-height: 20px;
@@ -1238,9 +1240,6 @@ body{
 		justify-content: center;
 		align-items: center;
 	}
-	.footer .copyright .menu li{
-		height: 70px;
-	}
 	.footer .copyright .menu li a{
 		padding: 0 15px;
 	}
@@ -1253,8 +1252,33 @@ body{
 		padding: 0 5px;
 	}
 }
-
-
+.footer .copyright .menu2{
+	display: none;
+}
+@media all and (max-width: 767px){
+	.footer .copyright .menu1{
+		display: none;
+	}
+	.footer .copyright .menu2{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.footer .copyright .menu li{
+		margin-top: 20px;
+		line-height: 40px;
+	}
+	.footer .copyright .menu li a{
+		padding: 0 15px;
+		text-align: center;
+		width: 100%;
+	}
+}
+@media all and (max-width: 575px){
+	.footer .copyright .menu li a{
+		padding: 0 10px;
+	}
+}
 
 /*END FOOTER*/
 
