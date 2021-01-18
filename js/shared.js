@@ -6,8 +6,8 @@ $(window).on('load',function(){
 
 //back to top
   $(window).scroll(function(){
-    var pos = $('html,body').scrollTop();
-    if(pos>500){
+    $pos = $('html,body').scrollTop();
+    if($pos>500){
       $('.backToTop').attr('style','visibility:visible; bottom: 5%;')
     }
     else{
@@ -17,6 +17,19 @@ $(window).on('load',function(){
   $('.backToTop').click(function() {
       $('html,body').animate({scrollTop: 0},1000);
    });
+
+//header child menu
+  $('.header-box .header .menu .menu-item').click(function(){
+    $('.header-box .header .menu .menu-item').find('.child-menu').slideUp();
+    if($(this).find('.child-menu').css('display') == 'none'){
+      $(this).find('.child-menu').slideDown();
+      $(this).css('background-color','#ebebeb');
+    }
+    else{
+      $(this).find('.child-menu').slideUp();
+      $(this).css('background-color','#ffff');
+    }
+  });
 
 // resheader button animation
   $('#box1').click(function(){
