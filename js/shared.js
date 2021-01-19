@@ -23,6 +23,7 @@ $(window).on('load',function(){
     $('.header-box .header .menu .menu-item').find('.child-menu').slideUp();
     if($(this).find('.child-menu').css('display') == 'none'){
       $(this).find('.child-menu').slideDown();
+      $('.header-box .header .menu .menu-item').css('background-color','#fff');
       $(this).css('background-color','#ebebeb');
     }
     else{

@@ -104,13 +104,14 @@
 	width: 100%;
 	height: 50px;
 	background-color: #627383;
-	z-index: 20;
+	z-index: 5;
 	display: none;
 }
 /*FIXED TOPIC BAR*/
 
 /*FAMILY HOLIDAY*/
 .holiday{
+	padding-top: 50px;
 	padding-bottom: 100px;
 }
 .holiday .description{
@@ -135,7 +136,7 @@
 .holiday .ages .item:hover{
 	background-color: #ccc;
 }
-.holiday .ages .item p{
+.holiday .ages .item .age-range{
 	width: 100%;
 	height: 50px;
 	line-height: 50px;
@@ -156,6 +157,7 @@
 	justify-content: center;
 	align-items: center;
 	background-color: #5a564f;
+	z-index: 50;
 }
 .star-pin i{
 	font-size: 30px;
@@ -257,7 +259,7 @@
 
 /*HOLIDAY BULID*/
 .holiday-build{
-	border-top: 1px solid transparent;
+	border-top: 1px solid #ccc;
 	padding-top: 50px;
 	padding-bottom: 50px;
 	position: relative;
@@ -334,12 +336,393 @@
 
 /*TOP-DESTINATION*/
 .top-destination{
+	padding-bottom: 50px;
+	background-color: #f5f5f5;
+	position: relative;
+	border-top: 1px solid #ccc;
+}
+.top-destination .category-title{
+	width: 100%;
+	margin-top: 50px;
+	font-size: 30px;
+	line-height: 40px;
+	text-transform: uppercase;
+	text-align: center;
+}
+.top-destination .list-item{
+	/*margin-top: 0px;*/
+}
+.top-destination .list-item .des-item{
+	border: 5px solid transparent;
+	padding: 0;
+	margin-top: 30px;
+}
+.top-destination .list-item .des-item .image{
+	width: 100%;
+	height: 300px;
+}
+.top-destination .list-item .des-item .image img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.top-destination .list-item .des-item .title{
+	font-size: 30px;
+	width: 100%;
+	margin-top: 10px;
+	padding: 0 5%;
+	text-align: center;
+	text-transform: uppercase;
+}
+.top-destination .list-item .des-item .tags{
+	width: 100%;
+	padding: 0 5%;
+}
+.top-destination .list-item .des-item .tags .tag-item{
+	display: inline-block;
+	font-size: 14px;
+	color: white;
+	padding: 5px 10px;
+	background-color: black;
+}
+.top-destination .list-item .des-item .criterias{
+	width: 100%;
+	padding: 0 5%;
+}
+.top-destination .list-item .des-item .criterias .crit-item{
+}
+.top-destination .list-item .des-item .criterias .crit-item .star-icon{
+}
+.top-destination .list-item .des-item .criterias .crit-item .star-icon i{
+	color: white;
+	font-size: 14px;
+	padding: 5px;
+	border-radius: 12px;
+	background-color: black;
+	transform: rotate(-10deg);
+}
+.top-destination .list-item .des-item .criterias .crit-item .crit-des{
+	line-height: 24px;
+}
+.top-destination .list-item .des-item .explore-btn{
+	width: 100%;
+	margin-top: 20px;
+	padding: 0 5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.top-destination .list-item .des-item .explore-btn button{
+	padding: 5px 10px;
+	background-color: #d96c5e;
+	color: white;
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+.top-destination .list-item .des-item .explore-btn button:hover{
+	background-color: #cf4635;
+}
 
-}
-.top-destination .des-item{
-	
-}
 /*TOP-DESTINATION*/
+
+/*HOLIDAYS FOR AGES*/
+.holiday-for-ages{
+	position: relative;
+	border-top: 1px solid #ccc;
+	padding-bottom: 50px;
+}
+.holiday-for-ages .title{
+	width: 100%;
+	font-size: 30px;
+	line-height: 40px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 50px;	
+}
+.holiday-for-ages .list{
+	margin-top: 50px;
+}
+.holiday-for-ages .list .age-item .age-title{
+	font-size: 24px;
+	text-align: center;
+	width: 100%;
+}
+.holiday-for-ages .list .age-item .age-des{
+	width: 100%;
+	font-size: 14px;
+}
+.holiday-for-ages .list .age-item .age-des a{
+	text-decoration: none;
+	color: #d96c5e;
+}
+.holiday-for-ages .list .age-item .age-des a:hover{
+	text-decoration: underline;
+	color: #cf4635;
+}
+
+/*HOLIDAYS FOR AGES*/
+
+/*HOLIDAY BUILD 2*/
+.holiday-build2{
+	background-color: #f5f5f5;
+}
+/*HOLIDAY BUILD 2*/
+
+/*FAMILY HOLIDAY 2*/
+.family-holiday2{
+	border-top: 1px solid #ccc;
+	position: relative;
+}
+.family-holiday2 .ages{
+	padding: 0;
+	margin-top: 30px;
+}
+.holiday .ages .item{
+	height: auto;
+	background-color: transparent;
+}
+.holiday .ages .item:hover{
+	background-color: transparent;
+}
+.holiday .ages .item .level{
+	width: 100%;
+	font-size: 30px;
+	text-align: center;
+}
+.holiday .ages .item .price{
+	width: 100%;
+	font-size: 22px;
+	text-align: center;
+	color: #8e8586;
+}
+.holiday .ages .item .per-person{
+	width: 100%;
+	padding: 0 5%;
+	font-size: 16px;
+	text-align: center;
+}
+.holiday .ages .item a:hover{
+	text-decoration: none;
+}
+.holiday .ages .item .country{
+	width: 100%;
+	line-height: 50px;
+	text-align: center;
+	font-size: 18px;
+	background-color: #f5f5f5;
+	text-decoration: none;
+	color: black;
+}
+.holiday .ages .item .country:hover{
+	background-color: #ccc;
+}
+/*FAMILY HOLIDAY 2*/
+
+.pseudo-location{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 80px;
+	background-color: transparent;
+	user-select: none;
+	pointer-events: none;
+}
+/*TRIPS*/
+.trips{
+	border-top: 1px solid #ccc;
+	background-color: #f5f5f5;
+	position: relative;
+	padding-bottom: 80px;
+}
+.trips .trips-title{
+	width: 100%;
+	margin-top: 100px;
+	font-size: 30px;
+	line-height: 40px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.trips .list-item{
+	padding: 0 10%;
+}
+@media all and (max-width: 767px){
+	.trips .list-item{
+		padding: 0;
+	}
+}
+.trips .list-item .trips-item{
+	border: 5px solid transparent;
+	padding: 0;
+	position: relative;
+	cursor: pointer;
+	box-shadow: inset 0 0 0 1000px white;
+}
+.trips .list-item .trips-item:hover{
+	box-shadow: inset 0 0 0 1000px #e6e6e6;
+}
+.trips .list-item .trips-item .image{
+	width: 100%;
+	height: 300px;
+}
+.trips .list-item .trips-item .image img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.trips .list-item .trips-item .title{
+	font-size: 30px;
+	line-height: 36px;
+	width: 100%;
+	margin-top: 10px;
+	padding: 0 5%;
+	text-align: center;
+	text-transform: capitalize;
+}
+.trips .list-item .trips-item .detail{
+	width: 100%;
+	text-align: center;
+	font-size: 16px;
+}
+.trips .list-item .trips-item .tags{
+	width: 100%;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.trips .list-item .trips-item .tags .tag-item{
+	display: inline-block;
+	font-size: 14px;
+	padding: 5px 10px;
+	margin: 0 5px;
+	border: 1px solid #ccc;
+}
+.trips .list-item .trips-item .price{
+	width: 100%;
+	text-align: center;
+	font-size: 16px;
+	margin-top: 15px;
+}
+
+/*TRIPS*/
+
+/*REPUTATION*/
+.reputation{
+	position: relative;
+	border: 1px solid #ccc;
+}
+.reputation .criteria{
+	margin-top: 30px;
+}
+/*REPUTATION*/
+
+/*TIPS*/
+.tips{
+	border: 1px solid #ccc;
+	padding-bottom: 50px;
+	padding-top: 30px;
+}
+.tips .title{
+	margin-top: 50px;
+	width: 100%;
+	padding: 0 5%;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 30px;
+	line-height: 40px;
+}
+.tips a:hover{
+	text-decoration: none;
+}
+.tips .tip-item{
+	font-size: 18px;
+	line-height: 40px;
+	background-color: #f5f5f5;
+	width: 50%;
+	margin: 0 25%;
+	text-align: center;
+	color: black;
+	margin-top: 20px;
+}
+.tips .tip-item:hover{
+	background-color: #eae8e8;
+}
+/*TIPS*/
+
+/*CONCLUSION*/
+.conclusion{
+	border: 1px solid #ccc;
+	background-color: #f5f5f5;
+	padding-bottom: 50px;
+	padding-top: 80px;
+	position: relative;
+}
+.conclusion p{
+	width: 100%;
+	padding: 0 20%;
+	font-size: 16px;
+}
+.conclusion p span{
+	font-weight: bold;
+}
+/*CONCLUSION*/
+
+/*DECISION*/
+.decision{
+	border-top: 1px solid transparent;
+	padding-top: 80px;
+	padding-bottom: 150px;
+	background-color: #627383;
+}
+.decision .title{
+	width: 100%;
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 50px;
+	line-height: 60px;
+	font-weight: bold;
+}
+.decision .slogan{
+	width: 100%;
+	padding: 0 10%;
+	text-align: center;
+	color: white;
+	font-size: 28px;
+	line-height: 38px;
+}
+.decision .enquire{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.decision .enquire a:hover{
+	text-decoration: none;
+}
+.decision .enquire button{
+	padding: 10px 15px;
+	color: white;
+	background-color: #d96c5e;
+	border: none;
+	outline: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 24px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+.decision .enquire button:hover{
+	background-color: #cf4635;
+}
+/*DECISION*/
+
+
 
 
 /*FOOTER*/
