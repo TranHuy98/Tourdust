@@ -72,6 +72,7 @@ $(document).ready(function(){
     infinite: true,
     autoPlay: true,
     autoPlaySpeed: 2000,
+    arrow: false,
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [

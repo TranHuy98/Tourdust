@@ -2,12 +2,10 @@
 $(window).scroll(function(){
     $pos = $('html,body').scrollTop();
     if($pos>500){
-      $('.topic-banner').css('display','none');
-      $('.topic-bar').css('display','block');
+      $('.topic-banner').addClass('topic-bar');
     }
     else{
-      $('.topic-banner').css('display','block');
-      $('.topic-bar').css('display','none');
+      $('.topic-banner').removeClass('topic-bar');
     }
   });
 
@@ -16,9 +14,6 @@ $('.topic .item').click(function(){
 	$('.topic .item').find('.arrow').css('display','none');
 	$(this).find('.arrow').css('display','block');
 });
-
-
-
 
 //test scroll to function
 $(window).scroll(function() {
