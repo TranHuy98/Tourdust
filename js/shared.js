@@ -19,16 +19,23 @@ $(window).on('load',function(){
    });
 
 //header child menu
-  $('.header-box .header .menu .menu-item').click(function(){
-    $('.header-box .header .menu .menu-item').find('.child-menu').slideUp();
-    if($(this).find('.child-menu').css('display') == 'none'){
-      $(this).find('.child-menu').slideDown();
-      $('.header-box .header .menu .menu-item').css('background-color','#fff');
+  $('.header-box .header .menu .menu-item .title').click(function($e){
+    $('.header-box .header .menu .menu-item .title').parent().find('.child-menu').slideUp();
+    if($(this).parent().find('.child-menu').css('display') == 'none'){
+      $(this).parent().find('.child-menu').slideDown();
+      $('.header-box .header .menu .menu-item .title').css('background-color','#fff');
       $(this).css('background-color','#ebebeb');
     }
     else{
-      $(this).find('.child-menu').slideUp();
+      $(this).parent().find('.child-menu').slideUp();
       $(this).css('background-color','#ffff');
+    }
+  });
+
+  $(document).mouseup(function(e){
+    if (!$('.header-box .header .menu .menu-item').is(e.target) && $('.header-box .header .menu .menu-item').has(e.target).length === 0){
+        $('.header-box .header .menu .menu-item').find('.child-menu').slideUp();
+        $('.header-box .header .menu .menu-item .title').css('background-color','#ffff');
     }
   });
 

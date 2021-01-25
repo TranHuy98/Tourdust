@@ -396,10 +396,9 @@
 .top-destination .list-item .des-item .criterias .crit-item{
 }
 .top-destination .list-item .des-item .criterias .crit-item .star-icon{
-	border: 1px solid red;
+	
 }
 .top-destination .list-item .des-item .criterias .crit-item .star-icon i{
-	border: 1px solid blue;
 	color: white;
 	font-size: 14px;
 	padding: 5px;
@@ -409,12 +408,16 @@
 }
 .top-destination .list-item .des-item .criterias .crit-item .crit-des{
 	line-height: 24px;
-	border: 1px solid yellow;
 	margin-left: -15px;
 }
 @media all and (max-width: 767px){
 	.top-destination .list-item .des-item .criterias .crit-item .crit-des{
 		margin-left: 0;
+	}
+}
+@media all and (max-width: 575px){
+	.top-destination .list-item .des-item .criterias .crit-item .crit-des{
+		margin-left: -15px;
 	}
 }
 .top-destination .list-item .des-item .explore-btn{
@@ -482,43 +485,43 @@
 }
 /*HOLIDAY BUILD 2*/
 
-/*FAMILY HOLIDAY 2*/
-.family-holiday2{
+/*FAMILY HOLIDAY PRICE GUIDE*/
+.family-holiday{
 	border-top: 1px solid #ccc;
 	position: relative;
 }
-.family-holiday2 .ages{
+.family-holiday .ages{
 	padding: 0;
 	margin-top: 30px;
 }
-.holiday .ages .item{
+.family-holiday .ages .item{
 	height: auto;
 	background-color: transparent;
 }
-.holiday .ages .item:hover{
+.family-holiday .ages .item:hover{
 	background-color: transparent;
 }
-.holiday .ages .item .level{
+.family-holiday .ages .item .level{
 	width: 100%;
 	font-size: 30px;
 	text-align: center;
 }
-.holiday .ages .item .price{
+.family-holiday .ages .item .price{
 	width: 100%;
 	font-size: 22px;
 	text-align: center;
 	color: #8e8586;
 }
-.holiday .ages .item .per-person{
+.family-holiday .ages .item .per-person{
 	width: 100%;
 	padding: 0 5%;
 	font-size: 16px;
 	text-align: center;
 }
-.holiday .ages .item a:hover{
+.family-holiday .ages .item a:hover{
 	text-decoration: none;
 }
-.holiday .ages .item .country{
+.family-holiday .ages .item .country{
 	width: 100%;
 	line-height: 50px;
 	text-align: center;
@@ -527,7 +530,7 @@
 	text-decoration: none;
 	color: black;
 }
-.holiday .ages .item .country:hover{
+.family-holiday .ages .item .country:hover{
 	background-color: #ccc;
 }
 /*FAMILY HOLIDAY 2*/
@@ -595,6 +598,7 @@
 }
 .trips .list-item .trips-item .detail{
 	width: 100%;
+	padding: 0 10px;
 	text-align: center;
 	font-size: 16px;
 }

@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Index - Tourdust</title>
+	<title>Detail Destination - Tourdust</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/family-holiday.css">
+	<link rel="stylesheet" type="text/css" href="css/detail-destination.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
 	<link rel="stylesheet" type="text/css" href="css/css/all.css">
-	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-datepicker3.css">
 	<link rel="stylesheet" type="text/css" href="css/flaticon.css">
 	<link rel="icon" type="image/png" href="img/favicon.png">
@@ -25,9 +27,9 @@
 	<!-- end back to top -->
 
 	<!-- preloader -->
-	<div id="preloader">
+	<!-- <div id="preloader">
 		<div class="lds-dual-ring"></div>
-	</div>
+	</div> -->
 	<!-- preloader -->
 
 	<!-- header -->
@@ -172,7 +174,7 @@
 						<div class="line9 line"></div>
 					</div>
 				</div>
-				<button onclick="location.href='#'">enquire</button>
+				<button onclick="location.href=''">enquire</button>
 			</div>
 		</div>
 	</div>
@@ -183,7 +185,7 @@
 		<div class="row">
 			<div class="hidden-drop-menu" id="dropMenu">
 				<div class="col-12 itemBox">
-					<div class="pre-hid">our story</div>
+					<div class="pre-hid" onclick="location.href=''">our story</div>
 				</div>
 				<div class="col-12 itemBox">
 					<div class="row">
@@ -191,7 +193,7 @@
 						<div class="col-12 child-menu">
 							<div class="row">
 								<div class="col-sm-6 col-12 item">
-									<p class="title"><a href="family-holiday.html">family holiday</a></p>
+									<p class="title"><a href="javascript:void(0);">family holiday</a></p>
 									<p class="criteria"><a href="javascript:void(0);">deestination guide</a></p>
 									<p class="criteria"><a href="javascript:void(0);">age guide</a></p>
 									<p class="criteria"><a href="javascript:void(0);">typical costs</a></p>
@@ -306,7 +308,7 @@
 					</div>
 				</div>
 				<div class="col-12 itemBox  ">
-					<div class="pre-hid" onclick="location.href='#'">get in touch</div>
+					<div class="pre-hid" onclick="location.href=''">get in touch</div>
 				</div>
 			</div>
 		</div>
@@ -314,312 +316,77 @@
 	<!-- end resHeader -->
 
 	<!-- banner -->
-	<div class="banner-box">
+	<div class="container-fluid banner-box">
 		<div class="banner-bg">
-			<img src="img/banner.jpg">
+			<img src="img/scene13.jpg">
 		</div>
-		<div class="container banner banner1">
+		<div class="container banner1 banner">
 			<div class="words">
-				<p>anything but ordinary family holidays</p>
+				<p>vietnam</p>
 			</div>
-			<div class="clearBoth"></div>
-			<div class="image">
-				<img src="img/feefo.png">
-			</div>
-			<div class="clearBoth"></div>
 			<form action="#holiday">
 				<button type="submit">Explore <i class="fa fa-angle-down"></i></button>
 			</form>
 		</div>
-		<div class="container-fluid banner banner2">
+		<div class="container-fluid banner2 banner">
 			<div class="words">
-				<p>anything but ordinary family holidays</p>
+				<p>vietnam</p>
 			</div>
-			<div class="clearBoth"></div>
-			<div class="image">
-				<img src="img/feefo.png">
-			</div>
-			<div class="clearBoth"></div>
 			<form action="#holiday">
 				<button type="submit">Explore <i class="fa fa-angle-down"></i></button>
 			</form>
 		</div>
-		<div class="rating" id="holiday" style="width: 100%;">
-			<p>
-				<span class="star">
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star"></i>
-				</span>
-				Family Travel Experts with more than 600 5-star reviews*
-			</p>
+		<div class="topic topic-banner" id="holiday">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-4 item" onclick="location.href='#overview'">
+						<p>overview</p>
+						<div class="arrow"></div>
+					</div>
+					<div class="col-4 item" onclick="location.href='#trips'">
+						<p>trips</p>
+						<div class="arrow"></div>
+					</div>
+					<div class="col-4 item" onclick="location.href='#tips'">
+						<p class="p-tips">tips & advices</p>
+						<p class="p-faqs">faqs</p>
+						<div class="arrow"></div>
+					</div>
+				</div>
+			</div>
 		</div>
+		<div class="pseudo-location" id="overview"></div>
 	</div>
 	<!-- banner -->
 
-	<!-- holiday -->
-	<div class="holiday holiday1">
-		<div class="container">
-			<p class="title">family holidays</p>
-			<p class="description">We specialise in luxury and adventure travel for families of all ages</p>
-			<div class="row list">
-				<div class="col-4 item">
-					<a href="javascript:void(0);" class="destination">
-						<p>california & utah</p>
-					</a>
-				</div>
-				<div class="col-4 item">
-					<img src="img/scene0.jpg">
-					<a href="javascript:void(0);" class="destination">
-						<p>california & utah</p>
-					</a>
-				</div>
-				<div class="col-4 item">
-					<img src="img/scene0.jpg">
-					<a href="javascript:void(0);" class="destination">
-						<p>california & utah</p>
-					</a>
-				</div>
-				<div class="col-4 item">
-					<img src="img/scene0.jpg">
-					<a href="javascript:void(0);" class="destination">
-						<p>california & utah</p>
-					</a>
-				</div>
-				<div class="col-4 item">
-					<img src="img/scene0.jpg">
-					<a href="javascript:void(0);" class="destination">
-						<p>california & utah</p>
-					</a>
-				</div>
-				<div class="col-4 item">
-					<img src="img/scene0.jpg">
-					<a href="javascript:void(0);" class="destination">
-						<p>california & utah</p>
-					</a>
-				</div>
-				<div class="col-4 item">
-					<img src="img/scene0.jpg">
-					<a href="javascript:void(0);" class="destination">
-						<p>california & utah</p>
-					</a>
-				</div>
-				<div class="col-4 item">
-					<img src="img/scene0.jpg">
-					<a href="javascript:void(0);" class="destination">
-						<p>california & utah</p>
-					</a>
-				</div>
-				<div class="col-4 item">
-					<img src="img/scene0.jpg">
-					<a href="javascript:void(0);" class="destination">
-						<p>california & utah</p>
-					</a>
-				</div>
-				<div class="col-4 item">
-					<img src="img/scene0.jpg">
-					<a href="javascript:void(0);" class="destination">
-						<p>california & utah</p>
-					</a>
-				</div>
-				<div class="col-4 item">
-					<img src="img/scene0.jpg">
-					<a href="javascript:void(0);" class="destination">
-						<p>california & utah</p>
-					</a>
-				</div>
-			</div>
-			<div class="more">
-				<button onclick="location.href='#'">see all family holidays <i class="fa fa-angle-right"></i></button>
-			</div>
-		</div>
+	<!-- family holiday -->
+	<div class="container-fluid holiday" id="overview-scroll">
+		<p class="pages-tree">
+			<span><a href="index.html">Home</a></span>/
+			<span><a href="family-holiday.html">Family Holidays</a></span>/
+			<span><a href="javascript:void(0)" class="active-page">Vietnam Family Holidays</a></span>
+		</p>
+		<p class="title">vietnam</p>
+		<p class="description">For the adventurous family, Vietnam offers dramatic scenery, ancient temples and palaces, fantastic and easy cycling and great beaches. If you are looking to just fly and flop then head instead to Thailand, but if you want to explore, then travelling from North to South, Vietnam offers buzzing Hanoi, the majestic Halong Bay, picturesque countryside, the Imperial City of Hue, the sleepy riverside Hoi An, the Mekong Delta and lots of beaches on the way.</p>
+		<p class="detail">We think Vietnam is best suited to families with kids aged 6-12 and teenagers.We are a ABTA & ATOL bonded tour operator specialising in family holidays and we know Vietnam inside out. We know every family is unique, so get in touch and we'll work with you to organise a Vietnam Holiday that will blow everyone in your family's socks off!</p>
 	</div>
-	<div class="holiday holiday2">
-		<div class="container-fluid holiday-slide">
-			<p class="title">family holidays</p>
-			<p class="description">We specialise in luxury and adventure travel for families of all ages</p>
-			<div class="row list">
-				<div class="col-4 item">
-					<img src="img/scene0.jpg">
-					<a href="javascript:void(0);" class="destination">
-						<p>california & utah</p>
-					</a>
-				</div>
-				<div class="col-4 item">
-					<img src="img/scene0.jpg">
-					<a href="javascript:void(0);" class="destination">
-						<p>california & utah</p>
-					</a>
-				</div>
-				<div class="col-4 item">
-					<img src="img/scene0.jpg">
-					<a href="javascript:void(0);" class="destination">
-						<p>california & utah</p>
-					</a>
-				</div>
-				<div class="col-4 item">
-					<img src="img/scene0.jpg">
-					<a href="javascript:void(0);" class="destination">
-						<p>california & utah</p>
-					</a>
-				</div>
-				<div class="col-4 item">
-					<img src="img/scene0.jpg">
-					<a href="javascript:void(0);" class="destination">
-						<p>california & utah</p>
-					</a>
-				</div>
-				<div class="col-4 item">
-					<img src="img/scene0.jpg">
-					<a href="javascript:void(0);" class="destination">
-						<p>california & utah</p>
-					</a>
-				</div>
-				<div class="col-4 item">
-					<img src="img/scene0.jpg">
-					<a href="javascript:void(0);" class="destination">
-						<p>california & utah</p>
-					</a>
-				</div>
-				<div class="col-4 item">
-					<img src="img/scene0.jpg">
-					<a href="javascript:void(0);" class="destination">
-						<p>california & utah</p>
-					</a>
-				</div>
-				<div class="col-4 item">
-					<img src="img/scene0.jpg">
-					<a href="javascript:void(0);" class="destination">
-						<p>california & utah</p>
-					</a>
-				</div>
-				<div class="col-4 item">
-					<img src="img/scene0.jpg">
-					<a href="javascript:void(0);" class="destination">
-						<p>california & utah</p>
-					</a>
-				</div>
-			</div>
-			<div class="more">
-				<button onclick="location.href='#'">see all family holidays <i class="fa fa-angle-right"></i></button>
-			</div>
-		</div>
-	</div>
-	<!-- holiday -->
-	
-	<!-- safari -->
-	<div class="holiday holiday1 safari">
-		<div class="container">
-			<p class="title">family safaris</p>
-			<p class="description">Bring out your wild side on a family safari</p>
-			<div class="row list">
-				<div class="col-4 item">
-					<a href="javascript:void(0);" class="destination">
-						<p>california & utah</p>
-					</a>
-				</div>
-				<div class="col-4 item">
-					<img src="img/scene0.jpg">
-					<a href="javascript:void(0);" class="destination">
-						<p>california & utah</p>
-					</a>
-				</div>
-				<div class="col-4 item">
-					<img src="img/scene0.jpg">
-					<a href="javascript:void(0);" class="destination">
-						<p>california & utah</p>
-					</a>
-				</div>
-				<div class="col-4 item">
-					<img src="img/scene0.jpg">
-					<a href="javascript:void(0);" class="destination">
-						<p>california & utah</p>
-					</a>
-				</div>
-				<div class="col-4 item">
-					<img src="img/scene0.jpg">
-					<a href="javascript:void(0);" class="destination">
-						<p>california & utah</p>
-					</a>
-				</div>
-				<div class="col-4 item">
-					<img src="img/scene0.jpg">
-					<a href="javascript:void(0);" class="destination">
-						<p>california & utah</p>
-					</a>
-				</div>
-			</div>
-			<div class="more">
-				<button onclick="location.href='#'">see all family safaris <i class="fa fa-angle-right"></i></button>
-			</div>
-		</div>
-	</div>
-	<div class="container-fluid holiday holiday2 safari">
-		<p class="title">family safaris</p>
-		<p class="description">Bring out your wild side on a family safari</p>
-		<div class="row list">
-			<div class="col-4 item">
-				<img src="img/scene0.jpg">
-				<a href="javascript:void(0);" class="destination">
-					<p>california & utah</p>
-				</a>
-			</div>
-			<div class="col-4 item">
-				<img src="img/scene0.jpg">
-				<a href="javascript:void(0);" class="destination">
-					<p>california & utah</p>
-				</a>
-			</div>
-			<div class="col-4 item">
-				<img src="img/scene0.jpg">
-				<a href="javascript:void(0);" class="destination">
-					<p>california & utah</p>
-				</a>
-			</div>
-			<div class="col-4 item">
-				<img src="img/scene0.jpg">
-				<a href="javascript:void(0);" class="destination">
-					<p>california & utah</p>
-				</a>
-			</div>
-			<div class="col-4 item">
-				<img src="img/scene0.jpg">
-				<a href="javascript:void(0);" class="destination">
-					<p>california & utah</p>
-				</a>
-			</div>
-			<div class="col-4 item">
-				<img src="img/scene0.jpg">
-				<a href="javascript:void(0);" class="destination">
-					<p>california & utah</p>
-				</a>
-			</div>
-			<div class="col-4 item">
-				<img src="img/scene0.jpg">
-				<a href="javascript:void(0);" class="destination">
-					<p>california & utah</p>
-				</a>
-			</div>
-		</div>
-		<div class="more">
-			<button onclick="location.href='#'">see all family holidays <i class="fa fa-angle-right"></i></button>
-		</div>
-	</div>
-	<!-- safari -->
+	<!-- family holiday -->
 
-	<!-- travel expert -->
-	<div class="travel-expert container-fluid">
+	<!-- review -->
+	<div class="container-fluid reviews">
+		<div class="star-pin">
+			<i class="fas fa-star"></i>
+		</div>
+		<div class="description">
+			<p>Our Family Holidays are <span class="rated">rated 5 out of 5</span>
+			<span class="more"><a href="javascript:void(0);">See more review</a></span><img src="img/feefo-review.png"></p>
+		</div>
+		<div class="clearBoth"></div>
 		<div class="row">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6 col-md-12 image">
-						<img src="img/scene10.jpg">
-					</div>
-					<div class="col-lg-6 col-md-12 words">
-						<p class="title">family travel expert</p>
-						<p class="description">Our senior family travel specialists, Ben and Lisa, have 35 combined years creating exceptional tailor-made holidays. Oipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			<div class="col-12">
+				<div class="comment">
+					<div class="detail">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -631,56 +398,84 @@
 						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 					</div>
-					<div class="more col-12">
-						<button onclick="location.href='#'">read more</button>
+				</div>	
+				<div class="guest">
+					<p class="minor">Joana reviewing <span><a href="javascript:void(0);">South Africa Luxury Safari & Beach Holiday</a></span>
+				</div>
+			</div>
+		</div>
+		<div class="pseudo-location" id="trips"></div>
+	</div>
+	<!-- review -->
+
+	<!-- holiday for ages -->
+	<div class="holiday-for-ages">
+		<div class="star-pin">
+			<i class="fas fa-star"></i>
+		</div>
+		<div class="container">
+			<p class="title">vietnam for families</p>
+			<p class="description">Hightlight</p>
+			<div class="list">
+				<div class="row">
+					<div class="col-lg-6 col-md-12 age-item">
+						<p class="age-des">Many of the highlights of Vietnam are in the North and make for a fantastic journey travelling South from buzzing Hanoi via beautiful Halong Bay, the traditional rice terraces of Pu Luong and the charming riverside Hoi An. Care needs taking to avoid going too heavy on cultural sites and temples, so for families we prefer to mix the cultural sites up with bike rides and treks in the countryside and plenty of pool & beach time. We think a dose of relaxed beach time is essential on any family holiday in SE Asia to balance out all the culture. Vietnam has a beautiful coastline, with stunning resorts along the Central Coast and in the Islands of Southern Vietnam.</p>
+					</div>
+					<div class="col-lg-6 col-md-12 age-item">
+						<a href="javascript:void(0);"><p class="tip-item">Practicalities of trekking in the Atlas Mountains with children</p></a>
+						<a href="javascript:void(0);"><p class="tip-item">Practicalities of trekking in the Atlas Mountains with children</p></a>
+						<a href="javascript:void(0);"><p class="tip-item">Practicalities of trekking in the Atlas Mountains with children</p></a>
+						<a href="javascript:void(0);"><p class="tip-item">Practicalities of trekking in the Atlas Mountains with children</p></a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- travel expert -->
+	<!-- holiday for ages -->
 
-	<!-- review -->
-	<div class="container-fluid review">
-		<p class="title">don't just take our word for it</p>
-		<p class="description">Our Family Holidays are <span>rated 5 out of 5</span></p>
-		<div class="comment">
-			<div class="detail">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<!-- trips -->
+	<div class="trips" id="trips-scroll">
+		<div class="star-pin">
+			<i class="fas fa-star"></i>
+		</div>
+		<div class="container-fluid">
+			<p class="trips-title">trips</p>
+			<div class="row list-item">
+				<div class="col-md-6 col-sm-12 trips-item" onclick="location.href=''">
+					<div class="image">
+						<img src="img/scene0.jpg">
+					</div>
+					<p class="title">vietnam</p>
+					<p class="detail">Enjoy the grace scene and a vast exciting destination to explore and vist. A must-have trips in your life.</p>
+					<div class="tags">
+						<p class="tag-item">Xmas&NY</p>
+						<p class="tag-item">Feb</p>
+						<p class="tag-item">Master</p>
+					</div>
+					<p class="price">From <i class="fa fa-pound-sign"></i>365 per person</p>
+				</div>
+				<div class="col-md-6 col-sm-12 trips-item" onclick="location.href=''">
+					<div class="image">
+						<img src="img/scene1.jpg">
+					</div>
+					<p class="title">vietnam</p>
+					<p class="detail">Enjoy the grace scene and a vast exciting destination to explore and vist. A must-have trips in your life.</p>
+					<div class="tags">
+						<p class="tag-item">Xmas&NY</p>
+						<p class="tag-item">Feb</p>
+						<p class="tag-item">Master</p>
+					</div>
+					<p class="price">From <i class="fa fa-pound-sign"></i>365 per person</p>
+				</div>
 			</div>
 		</div>
-		<div class="guest">
-			<p class="minor">Joana <span>See all Reviews</span></p>
-			<img src="img/feefo-review.png">
-			<div class="clearBoth"></div>
-			<p class="major">* according to Tourdust's onsite customer reviews and Feefo verified customer reviews</p>
-		</div>
 	</div>
-	<!-- review -->
+	<!-- trips -->
 
 	<!-- reputation -->
 	<div class="container-fluid reputation">
-		<div class="famous-press">
-			<p class="quotes">"authentic local knowledge"</p>
-			<img src="img/daily-telegraph.png">
-		</div>
-		<div class="famous-press">
-			<p class="quotes">"the best half term breaks"</p>
-			<img src="img/the-times.png">
-		</div>
-		<div class="famous-press">
-			<p class="quotes">"will appeal as much to adults as to kids"</p>
-			<img src="img/the-guardian.svg">
+		<div class="star-pin">
+			<i class="fas fa-star"></i>
 		</div>
 		<div class="container criteria crit1">
 			<div class="row">
@@ -714,27 +509,71 @@
 				</div>
 			</div>
 		</div>
+		<div class="pseudo-location" id="tips"></div>
 	</div>
 	<!-- reputation -->
+
+	<!-- accommodation -->
+	<div class="trips accommodation">
+		<div class="star-pin">
+			<i class="fas fa-star"></i>
+		</div>
+		<div class="container-fluid">
+			<p class="trips-title">acommodation</p>
+			<div class="row list-item">
+				<div class="col-md-6 col-sm-12 trips-item" onclick="location.href=''">
+					<div class="image">
+						<img src="img/scene0.jpg">
+					</div>
+					<p class="title">vietnam</p>
+					<p class="detail">Enjoy the grace scene and a vast exciting destination to explore and vist. A must-have trips in your life.</p>
+					<div class="tags">
+						<p class="tag-item">Xmas&NY</p>
+						<p class="tag-item">Feb</p>
+						<p class="tag-item">Master</p>
+					</div>
+					<p class="price">From <i class="fa fa-pound-sign"></i>365 per person</p>
+				</div>
+				<div class="col-md-6 col-sm-12 trips-item" onclick="location.href=''">
+					<div class="image">
+						<img src="img/scene1.jpg">
+					</div>
+					<p class="title">vietnam</p>
+					<p class="detail">Enjoy the grace scene and a vast exciting destination to explore and vist. A must-have trips in your life.</p>
+					<div class="tags">
+						<p class="tag-item">Xmas&NY</p>
+						<p class="tag-item">Feb</p>
+						<p class="tag-item">Master</p>
+					</div>
+					<p class="price">From <i class="fa fa-pound-sign"></i>365 per person</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- accommodation -->
+
+	<!-- map -->
+	<div class="map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.808871869986!2d105.77227781493282!3d21.040332185992185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454c9755033dd%3A0xf13b328d1266f239!2zMTQ3IFBo4buRIE1haSBE4buLY2gsIE1haSBE4buLY2gsIEPhuqd1IEdp4bqleSwgSMOgIE7hu5lp!5e0!3m2!1svi!2s!4v1611370571679!5m2!1svi!2s" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+	</div>
+	<!-- map -->
+
+	<!-- decision -->
+	<div class="decision">
+		<div class="container-fluid">
+			 <p class="title">decision...</p>
+			 <p class="slogan">Stop searching and speak to someone who knows</p>
+			 <div class="enquire">
+			 	<a href="javascript:void(0);"><button>enquire now</button></a>
+			 </div>
+		</div>
+	</div>
+	<!-- decision -->
+
 
 	<!-- footer -->	
 	<div class="footer">
 		<div class="container-fluid">
-			<div class="row">
-				<div class="container certificates">
-					<div class="row">
-						<div class="col-sm-6 col-12 words">
-							<p class="title">financial protection</p>
-							<p class="description">Tourdust is bonded with ABTA and ATOL</p>
-						</div>
-						<div class="col-sm-6 col-12 images">
-							<img src="img/abta.png">
-							<img src="img/atol.png">
-						</div>
-					</div>
-					
-				</div>
-			</div>
 			<div class="row">
 				<div class="container-fluid infomation">
 					<div class="row">
@@ -825,10 +664,13 @@
 	<!-- JS -->
 	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 	<script type="text/javascript" src="js/shared.js"></script>
+	<script type="text/javascript" src="js/family-holiday.js"></script>
 	<script type="text/javascript" src="slick/slick.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap-datepicker.min.js"></script>
-	<script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
 	<script type="text/javascript" src="js/jquery.counterup.js"></script>
-
+	<script type="text/javascript" src="js/waypoint/lib/jquery.waypoints.js"></script>
+	<script type="text/javascript">
+		//trigger event when scroll to overview, trips and tips
+	</script>
 </body>
 </html>
