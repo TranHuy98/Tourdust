@@ -236,7 +236,18 @@ body{
 }
 .header-box .header .menu .menu-item .child-menu .option i{
 }
-
+.header-box .header .menu .menu-item .child-menu .option-currency{
+	line-height: 30px;
+	margin-top: -15px;
+	width: 100%;
+	text-decoration: none;
+	font-size: 14px;
+	padding-left: 30px;
+	width: 100%;
+	color: black;
+}
+.header-box .header .menu .menu-item .child-menu .option-currency i{
+}
 
 /*END HEADER*/
 

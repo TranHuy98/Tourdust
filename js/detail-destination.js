@@ -43,5 +43,23 @@ $(document).ready(function(){
 
 //filter-region
 $('.region').click(function(){
-	
+	$regionSelect = $(this).text();
+  $('#dropbtn').text($regionSelect);
+  if($regionSelect == 'All'){
+    $('.region-name').parent().fadeIn(300);
+    $('#js-filter-region-dropdown').slideUp(300);
+  }
+  else{
+    $('.region-name').each(function(){
+      $regionName = $(this).text();
+      if($regionName == $regionSelect){
+        $(this).parent().fadeIn(300);
+        $('#js-filter-region-dropdown').slideUp(300);
+      }
+      else{
+        $(this).parent().fadeOut(300);
+        $('#js-filter-region-dropdown').slideUp(300);
+      }
+    });
+  }
 });

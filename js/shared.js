@@ -19,7 +19,7 @@ $(window).on('load',function(){
    });
 
 //header child menu
-  $('.header-box .header .menu .menu-item .title').click(function($e){
+  $('.header-box .header .menu .menu-item .title').click(function(){
     $('.header-box .header .menu .menu-item .title').parent().find('.child-menu').slideUp();
     if($(this).parent().find('.child-menu').css('display') == 'none'){
       $(this).parent().find('.child-menu').slideDown();
@@ -37,6 +37,14 @@ $(window).on('load',function(){
         $('.header-box .header .menu .menu-item').find('.child-menu').slideUp();
         $('.header-box .header .menu .menu-item .title').css('background-color','#ffff');
     }
+  });
+
+//currency change
+  $('.option-currency').click(function(){
+    $setUnit = $(this).find('i').attr('class');  
+    $('.currency-title').find('i').attr('class',$setUnit);
+    $('.header-box .header .menu .menu-item .title').parent().find('.child-menu').slideUp();
+     $('.header-box .header .menu .menu-item .title').css('background-color','#fff');
   });
 
 // resheader button animation
