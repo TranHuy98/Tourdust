@@ -205,6 +205,9 @@ body{
 	margin-top: -15px;
 	width: 100%;
 }
+.header-box .header .menu .menu-item .child-menu .criteria:hover{
+	background-color: #f5f5f5;
+}
 .header-box .header .menu .menu-item .child-menu .criteria a{
 	text-decoration: none;
 	text-transform: uppercase;
@@ -543,7 +546,6 @@ body{
 	width: 100%;
 	color: black;
 }
-
 .resHeader .child-menu .select{
 	line-height: 40px;
 	width: 100%;
@@ -1304,11 +1306,9 @@ body{
 	align-items: center;
 	width: 100%;
 }
-.footer .copyright .logo a{
-	/*width: 100%;*/
-}
 .footer .copyright .logo img{
 	transform: scale(0.6);
+	cursor: pointer;
 }
 @media all and (max-width: 1199px){
 	.footer .copyright .menu{
