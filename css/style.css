@@ -1376,8 +1376,8 @@ body{
 }
 
 .selection_bubble_root{
-	display: none;
+	display: none !important;
 }
 #image_search{
-	display: none;
+	display: none !important;
 }
