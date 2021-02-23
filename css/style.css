@@ -1374,3 +1374,10 @@ body{
     	-webkit-print-color-adjust:exact;
     }
 }
+
+.selection_bubble_root{
+	display: none;
+}
+#image_search{
+	display: none;
+}
